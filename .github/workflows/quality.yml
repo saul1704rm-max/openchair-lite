@@ -10,6 +10,7 @@ jobs:
       - run: corepack enable
       - run: pnpm install --frozen-lockfile --ignore-scripts
       - run: pnpm run lint
+      - run: pnpm run format:check
       - run: pnpm run typecheck
       - run: pnpm test
       - run: pnpm run build
