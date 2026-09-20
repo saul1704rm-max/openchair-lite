@@ -1,0 +1,7 @@
+import type { Language } from "./types";
+
+const copy = {
+  en: { open: "Open workspace", start: "Start a session", saved: "Saved locally", overview: "Overview", speakers: "Speakers", caucus: "Caucus", motions: "Motions", voting: "Voting", log: "Session log", settings: "Settings", back: "Sessions", newSession: "New session", conference: "Conference", committee: "Committee", topic: "Topic", delegations: "Delegations", create: "Create workspace", add: "Add", pause: "Pause", startTimer: "Start", reset: "Reset", next: "Next speaker", time: "Time", current: "Current speaker", exports: "Export", import: "Import", empty: "No speakers in the queue.", required: "Required", language: "Language" },
+  es: { open: "Abrir espacio", start: "Iniciar una sesión", saved: "Guardado localmente", overview: "Resumen", speakers: "Oradores", caucus: "Caucus", motions: "Mociones", voting: "Votación", log: "Registro", settings: "Configuración", back: "Sesiones", newSession: "Nueva sesión", conference: "Conferencia", committee: "Comité", topic: "Tema", delegations: "Delegaciones", create: "Crear espacio", add: "Añadir", pause: "Pausar", startTimer: "Iniciar", reset: "Reiniciar", next: "Siguiente orador", time: "Tiempo", current: "Orador actual", exports: "Exportar", import: "Importar", empty: "No hay oradores en la lista.", required: "Obligatorio", language: "Idioma" },
+};
+export function t(language: Language) { return copy[language]; }
